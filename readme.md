@@ -40,4 +40,4 @@ This project provides the following features:
 - By convention, non-code assets like images can be stored in the /static directory and referenced directly
 
 ## demo-app
-- A demo app will probably eventually be created for the project web site.
+- For now, the best live example (built with an early version of web-component-boilerplate) is the [sf3am.com front page](https://sf3am.com)

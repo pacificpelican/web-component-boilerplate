@@ -7,61 +7,295 @@ export default class App extends Component {
   render() {
     return html`
       <div id="main">
-        <h3>Henlo Hammerhead Shark</h3>
-        <div class="grid">
-          <section id="sidebar">µ</section>
-          <img
-            src="../static/img/jonas-allert-v4xMAiisCx0-unsplash.jpg"
-            alt="hammerhead-shark"
-            class="pic"
-          />
-          <footer id="web-component-boilerplate">
-            web-component-boilerplate from <a href="https://danmckeown.info">Dan McKeown</a>
-          </footer>
-          <aside id="rightSide">∑ß</aside>
-        </div>
+        <div id="fContainer">
+          <header id="topTier">
+            <section id="topTier--title-section">
+              <h1 id="frye">Web Component Boilerplate</h1>
+            </section>
+            <section id="topTier--nav-section">
+              <ul id="topTier--nav-section___nav">
+                <li>
+                  <a href="https://fryemuseum.org/">Visit</a>
+                </li>
+                <li>Exhibitions</li>
+                <li>Collections</li>
+                <li>Programs</li>
+                <li>Support</li>
+              </ul>
+            </section>
+            <section id="topTier--search-section">
+              🔍
+            </section>
+          </header>
 
-        <br />
-        <footer>
-          (utilizes <a href="https://github.com/developit/htm">htm</a> and
-          <a href="https://preactjs.com/">Preact</a> for components)
-        </footer>
+          <main id="main-view">
+            <section id="main-view--section-img">
+              <article id="main-view--section-img___article">
+                <img
+                  id="main-view--section-img___article-img"
+                  src="./img/flower-focus.jpg"
+                  alt="mainImg"
+                />
+              </article>
+              <article id="main-view--section-img___article-caption">
+                <h4 id="main-view--section-img___article-caption____h4">
+                  8923hf982hf 89e2hv
+                </h4>
+                <h2 id="main-view--section-img___article-caption____h2">
+                  89243hf80 893hf 9hf 9
+                </h2>
+              </article>
+            </section>
+          </main>
+
+          <main id="carousel">
+            <section id="newsAndEvents">
+              <article id="box1">
+                <header id="newsAndEvents--box1__header"></header>
+                <h3>Meet Me At The Movies | BIMA</h3>
+                <aside>
+                  Friday, May 10
+                </aside>
+                <main>
+                  10:30 am - 12:00 pm
+                </main>
+                <p>
+                  <a href="#">Bainbridge Island Museum of Art</a>
+                </p>
+              </article>
+              <article id="box2">
+                <header id="newsAndEvents--box2__header"></header>
+                <h3>Romaine Brooks</h3>
+                <aside>
+                  Friday, May 10
+                </aside>
+                <main>
+                  11:00 am - 12:00 pm
+                </main>
+                <p>
+                  <a href="#">Frye Auditorium</a>
+                </p>
+              </article>
+              <article id="box3">
+                <header id="newsAndEvents--box3__header"></header>
+                <h3>Black Radical Imagination: Fugitive Trajectories</h3>
+                <span> Film with Jheanelle Brown and Darol Olu Kae </span>
+                <aside>
+                  Friday, May 11
+                </aside>
+                <main>
+                  1:00 pm - 3:00 pm
+                </main>
+                <p>
+                  <a href="#">Frye Auditorium</a>
+                </p>
+              </article>
+            </section>
+          </main>
+
+          <main id="grid">
+            <section id="donate">
+              <span>donate</span>
+            </section>
+            <section id="store">
+              <span>store</span>
+            </section>
+            <section id="cafe">
+              <span>cafe</span>
+            </section>
+          </main>
+
+          <footer id="info">
+            <aside id="copyright">
+              <span id="designed"
+                >(c) 2019 Designed by
+                <a href="http://altaredwood.work">Alta Redwood</a> in Washington
+                State</span
+              >
+            </aside>
+          </footer>
+        </div>
         <style>
           :root {
             --uiFonts: "Ubuntu Mono", "Inconsolata", "Anonymous Pro", "Hack",
               Menlo, monospace;
-            --contentFonts: "Lato", "Open Sans", "Lucida Grande", "Ubuntu Sans",
+            --contentFonts: "Ubuntu Sans", "Lato", "Open Sans", "Lucida Grande",
               "Segoe UI", "Roboto", Helvetica, sans-serif;
-            --displayFonts: "Gentona", "Baufra", Georgia, serif;
+            --displayFonts: "Gentona", "Baufra", Helvetica, sans-serif;
             --monoFonts: "Anonymous Pro", "Hack", "Fira Sans", "Inconsolata",
               monospace;
-            --textFonts: "Calluna", "Caslon", "Garamond" serif;
-            --sFonts: Courier, "Open Sans", monospace;
+            --white-color: white;
           }
-          aside,
-          footer#web-component-boilerplate {
-            border-style: groove;
-            border-color: aqua;
-            border-width: 1pt;
+          html {
+            box-sizing: border-box;
           }
-          img.pic {
-            width: 100%;
-            height: auto;
+          body {
+            margin-left: 0px;
+            margin-right: 0px;
+            padding-left: 0px;
+            padding-right: 0px;
           }
-          h3,
-          footer {
-            font-family: var(--sFonts, sans);
+          section#main-view--section-img,
+          section#newsAndEvents,
+          main#grid {
+            width: calc(85vw + 20px);
+            margin-left: calc(4.25vw + 15pt);
           }
-          @media only screen and (max-width: 800px) {
+          a#newsAndEvents--box1__link___1,
+          a#newsAndEvents--box1__link___2,
+          a#newsAndEvents--box2__link___1,
+          a#newsAndEvents--box3__link___1 {
+            background: rgba(106, 158, 182, 0.815);
+            color: var(--white-color, white);
+            padding-inline-start: calc(1vw + 5px);
+            padding-inline-end: calc(1vw + 5px);
+            padding-block-start: calc(0.4vw + 5px);
+            padding-block-end: calc(0.4vw + 5px);
           }
-          @media only screen and (min-width: 801px) {
-            .grid {
-              display: grid;
-              grid-gap: 10px;
-              grid-template-columns: 100px 1fr 3fr 1fr;
-              background-color: #fff;
-              color: #444;
+          footer#readMore {
+            margin-block-start: calc(2vh + 10px);
+          }
+          section#newsAndEvents {
+            margin-block-start: calc(2vh + 10px);
+          }
+          section#newsAndEvents img {
+            max-width: 99%;
+          }
+          header#newsAndEvents--box1__header {
+            margin-inline-start: calc(0px);
+            height: calc(10vh + 100px);
+            background: red;
+            background-image: url("./img/waterfall-near-Juneau--Alaska.jpg");
+          }
+          header#newsAndEvents--box2__header {
+            height: calc(10vh + 100px);
+            background: blue;
+            background-image: url("./img/FIREbyDanMcKeown2017.jpg");
+          }
+          header#newsAndEvents--box3__header {
+            height: calc(10vh + 100px);
+            background: green;
+            background-image: url("./img/boatlake-photo-1552234187-d9caaef9f7ca.jpg");
+          }
+          section#donate,
+          section#store,
+          section#cafe {
+            margin-inline-start: calc(2vw);
+            height: calc(10vh + 100px);
+            background: red;
+          }
+          section#store {
+            background-image: url("./img/photo-1550490754-1eb91754f4fc.jpg");
+          }
+          section#cafe {
+            background-image: url("./img/tree-168823-unsplash.jpg");
+          }
+          section#donate {
+            background-image: url("./img/talia-cohen-30431-unsplash.jpg");
+          }
+          @media (max-width: 779px) {
+            section#donate,
+            section#store,
+            section#cafe {
+              width: calc(80vw + 5px);
             }
+            section#newsAndEvents article {
+              width: calc(80vw + 5px);
+              margin-left: calc(0.5vw);
+              margin-right: calc(0.5vw);
+              background: var(--beigeColor, white);
+              margin-bottom: calc(5px + 2vw);
+              padding-block-start: calc(5px + 1vw);
+              padding-block-end: calc(5px + 2vw);
+            }
+            article#main-view--section-img___article img {
+              width: calc(75vw + 25px);
+            }
+            header#topTier {
+              margin-inline-start: calc(4vw + 10px);
+            }
+            #fContainer {
+              margin-left: calc(-1vw - 5px);
+            }
+          }
+          @media (min-width: 780px) {
+            main#grid {
+              display: flex;
+            }
+            h1#frye {
+              margin-block-start: calc(1vh + 5px);
+            }
+            section#topTier--search-section {
+              margin-block-start: calc(1vh + 5px);
+            }
+            section#donate,
+            section#store,
+            section#cafe {
+              width: calc(30vw + 5px);
+            }
+            ul#topTier--nav-section___nav,
+            section#newsAndEvents {
+              display: flex;
+            }
+            header#topTier {
+              display: flex;
+              justify-content: space-evenly;
+            }
+            section#newsAndEvents article {
+              width: calc(30vw + 20px);
+              margin-left: calc(0.5vw);
+              margin-right: calc(0.5vw);
+              background: var(--beigeColor, white);
+              margin-bottom: calc(5px + 2vw);
+              padding-block-start: calc(5px + 1vw);
+              padding-block-end: calc(5px + 2vw);
+              padding-inline-start: calc(5px + 1vw);
+              padding-inline-end: calc(5px + 2vw);
+            }
+            article#main-view--section-img___article img {
+              width: 98%;
+            }
+            ul#topTier--nav-section___nav li {
+              list-style: none;
+              margin-inline-end: calc(2vw + 10px);
+            }
+          }
+          main#grid {
+            color: white;
+            font-family: var(--uiFonts, monospace);
+          }
+          main#grid span {
+            display: block;
+            margin-inline-start: calc(4vw + 80px);
+            margin-block-start: calc(5vw + 30px);
+            font-size: calc(1.4rem);
+          }
+          h2#newsAndEvents--header,
+          h5#ff,
+          footer#purple {
+            text-align: center;
+          }
+          h2#newsAndEvents--header,
+          footer#purple {
+            margin-block-start: calc(25px + 3vh);
+          }
+          header#topTier {
+            font-family: var(--uiFonts, monospace);
+          }
+          main#main-view {
+            font-family: var(--contentFonts, serif);
+          }
+          main#carousel {
+            font-family: var(--displayFonts, sans-serif);
+          }
+          footer#info {
+            background: lightblue;
+            height: calc(50vh);
+            margin-block-start: calc(15px + 5vh);
+            padding-block-start: calc(5px + 1vw);
+            padding-block-end: calc(5px + 2vw);
+            margin-inline-start: calc(5px + 1vw);
+            margin-inline-end: calc(5px + 2vw);
           }
         </style>
       </div>
