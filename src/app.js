@@ -3,7 +3,7 @@ import htm from "/web_modules/htm.js";
 
 const html = htm.bind(h);
 
-class App extends Component {
+export default class App extends Component {
   render() {
     return html`
       <div id="main">
@@ -69,9 +69,9 @@ class App extends Component {
   }
 }
 
-render(
-  html`
-    <${App} />
-  `,
-  document.getElementById("main")
-);
+// render(
+//   html`
+//     <${App} />
+//   `,
+//   document.getElementById("main")
+// );

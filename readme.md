@@ -18,6 +18,7 @@ This project provides the following features:
 - Bundles dependencies using [Snowpack](https://github.com/pikapkg/snowpack)
 
 ## quickstart
+0. git clone `git-url-here`
 1. `cd web-component-boilerplate`
 2. `npm install`
 3. `npm run build`
@@ -34,9 +35,9 @@ This project provides the following features:
 - Clone the Git repo: `git clone <repo-url>`
 
 ## usage
-- Use the code as a scaffold for creating a new site
-- Make sure to upload the index.html, /src directory, and web_modules directory to your live site when you deploy
-- By convention, non-code assets like images can be stored in the /static directory
+- Use the code as a scaffold for creating a new site (for example edit app.js or create a new component to import into index.js)
+- Make sure to upload the index.html, /src directory, /static directory, and the /web_modules directory to your live site when you deploy
+- By convention, non-code assets like images can be stored in the /static directory and referenced directly
 
 ## demo-app
 - A demo app will probably eventually be created for the project web site.
