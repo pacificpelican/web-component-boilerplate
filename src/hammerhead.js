@@ -3,7 +3,7 @@ import htm from "/web_modules/htm.js";
 
 const html = htm.bind(h);
 
-class App extends Component {
+export default class App extends Component {
   render() {
     return html`
       <div id="main">
@@ -23,8 +23,7 @@ class App extends Component {
 
         <br />
         <footer>
-          (utilizes <a href="https://github.com/developit/htm">htm</a> and
-          <a href="https://preactjs.com/">Preact</a> for components)
+          (utilizes <a href="https://github.com/developit/htm">htm</a> and <a href="https://preactjs.com/">Preact</a> for components)
         </footer>
         <style>
           :root {
@@ -69,9 +68,3 @@ class App extends Component {
   }
 }
 
-render(
-  html`
-    <${App} />
-  `,
-  document.getElementById("main")
-);
