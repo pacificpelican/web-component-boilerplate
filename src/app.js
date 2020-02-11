@@ -65,7 +65,7 @@ export default class App extends Component {
               </article>
               <article id="box2">
                 <header id="newsAndEvents--box2__header"></header>
-                <h3>Romaine Brooks</h3>
+                <h3>Panel Discussion on whether to retire term "trash raccoon"</h3>
                 <aside>
                   Friday, May 10
                 </aside>
@@ -73,13 +73,13 @@ export default class App extends Component {
                   11:00 am - 12:00 pm
                 </main>
                 <p>
-                  <a href="#">Frye Auditorium</a>
+                  <a href="#">Little theater</a>
                 </p>
               </article>
               <article id="box3">
                 <header id="newsAndEvents--box3__header"></header>
-                <h3>Black Radical Imagination: Fugitive Trajectories</h3>
-                <span> Film with Jheanelle Brown and Darol Olu Kae </span>
+                <h3>Raccoons and Trash Cans: Symbiosis or Imbalanced Ecosystem Marker</h3>
+                <span>  </span>
                 <aside>
                   Friday, May 11
                 </aside>
@@ -87,7 +87,7 @@ export default class App extends Component {
                   1:00 pm - 3:00 pm
                 </main>
                 <p>
-                  <a href="#">Frye Auditorium</a>
+                  <a href="http://djmcloud.danieljmckeown.com/blog/2011/06/raccoon-raid/">Forest at Discovery Park</a>
                 </p>
               </article>
             </section>
@@ -167,12 +167,12 @@ export default class App extends Component {
           header#newsAndEvents--box2__header {
             height: calc(10vh + 100px);
             background: blue;
-            background-image: url("./img/FIREbyDanMcKeown2017.jpg");
+            background-image: url("./static/img/FIREbyDanMcKeown2017.jpg");
           }
           header#newsAndEvents--box3__header {
             height: calc(10vh + 100px);
             background: green;
-            background-image: url("./img/boatlake-photo-1552234187-d9caaef9f7ca.jpg");
+            background-image: url("./static/img/raccoon-in-trash-can-2011byDanielJMcKeown-500x500.jpg");
           }
           section#donate,
           section#store,
@@ -185,7 +185,7 @@ export default class App extends Component {
             background-image: url("./img/photo-1550490754-1eb91754f4fc.jpg");
           }
           section#cafe {
-            background-image: url("./img/tree-168823-unsplash.jpg");
+            background-image: url("../static/img/jonas-allert-v4xMAiisCx0-unsplash.jpg");
           }
           section#donate {
             background-image: url("./img/talia-cohen-30431-unsplash.jpg");
