@@ -33,16 +33,16 @@ export default class App extends Component {
               <article id="main-view--section-img___article">
                 <img
                   id="main-view--section-img___article-img"
-                  src="./img/flower-focus.jpg"
+                  src="./static/img/flower-focus.jpg"
                   alt="mainImg"
                 />
               </article>
               <article id="main-view--section-img___article-caption">
                 <h4 id="main-view--section-img___article-caption____h4">
-                  8923hf982hf 89e2hv
+                  Powered by <a href="https://github.com/preactjs/preact">Preact</a>, <a href="https://github.com/developit/htm">htm</a>, and <a href="https://github.com/pikapkg/snowpack">Snowpack</a>
                 </h4>
                 <h2 id="main-view--section-img___article-caption____h2">
-                  89243hf80 893hf 9hf 9
+                  Web Component Boilerplate is a fast web site starter with components and modules
                 </h2>
               </article>
             </section>
@@ -52,7 +52,7 @@ export default class App extends Component {
             <section id="newsAndEvents">
               <article id="box1">
                 <header id="newsAndEvents--box1__header"></header>
-                <h3>Meet Me At The Movies | BIMA</h3>
+                <h3>Alaska Wildlife</h3>
                 <aside>
                   Friday, May 10
                 </aside>
@@ -60,7 +60,7 @@ export default class App extends Component {
                   10:30 am - 12:00 pm
                 </main>
                 <p>
-                  <a href="#">Bainbridge Island Museum of Art</a>
+                  <a href="http://gallery.sf3am.com/photo/heron-in-Ketchikan-Creek--Alaska.jpg/59063719706064/">The Egrets and Herons of the North</a>
                 </p>
               </article>
               <article id="box2">
@@ -108,10 +108,7 @@ export default class App extends Component {
           <footer id="info">
             <aside id="copyright">
               <span id="designed"
-                >(c) 2019 Designed by
-                <a href="http://altaredwood.work">Alta Redwood</a> in Washington
-                State</span
-              >
+                >(c) 2019 Designed by <a href="http://altaredwood.work">Alta Redwood</a> in Washington State</span>
             </aside>
           </footer>
         </div>
@@ -165,7 +162,7 @@ export default class App extends Component {
             margin-inline-start: calc(0px);
             height: calc(10vh + 100px);
             background: red;
-            background-image: url("./img/waterfall-near-Juneau--Alaska.jpg");
+            background-image: url("./static/img/waterfall-near-Juneau--Alaska.jpg");
           }
           header#newsAndEvents--box2__header {
             height: calc(10vh + 100px);

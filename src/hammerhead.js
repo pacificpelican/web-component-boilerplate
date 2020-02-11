@@ -4,10 +4,10 @@ import htm from "/web_modules/htm.js";
 const html = htm.bind(h);
 
 export default class App extends Component {
-  render() {
+  render({ animal }) {
     return html`
       <div id="main">
-        <h3>Henlo Hammerhead Shark</h3>
+        <h3>Henlo ${animal}</h3>
         <div class="grid">
           <section id="sidebar">µ</section>
           <img
@@ -18,12 +18,12 @@ export default class App extends Component {
           <footer id="web-component-boilerplate">
             web-component-boilerplate from <a href="https://danmckeown.info">Dan McKeown</a>
           </footer>
-          <aside id="rightSide">∑ß</aside>
+          <aside id="rightSide">(utilizes <a href="https://github.com/developit/htm">htm</a> and <a href="https://preactjs.com/">Preact</a> for components)</aside>
         </div>
 
         <br />
         <footer>
-          (utilizes <a href="https://github.com/developit/htm">htm</a> and <a href="https://preactjs.com/">Preact</a> for components)
+          
         </footer>
         <style>
           :root {
