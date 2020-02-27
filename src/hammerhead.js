@@ -6,8 +6,8 @@ const html = htm.bind(h);
 export default class App extends Component {
   render({ animal }) {
     return html`
-      <div id="main">
-        <h3>Henlo ${animal}</h3>
+      <div id="main" class="animal">
+        <h3>This footer is property of the ${animal}</h3>
         <div class="grid">
           <section id="sidebar">µ</section>
           <img
@@ -61,6 +61,11 @@ export default class App extends Component {
               background-color: #fff;
               color: #444;
             }
+          }
+          div.animal {
+            margin-left: 5px;
+            margin-right: 5px;
+            
           }
         </style>
       </div>

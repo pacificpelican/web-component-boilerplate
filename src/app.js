@@ -15,12 +15,17 @@ export default class App extends Component {
             <section id="topTier--nav-section">
               <ul id="topTier--nav-section___nav">
                 <li>
-                  <a href="https://fryemuseum.org/">Visit</a>
+                  <a href="https://pacificio.com">Visit</a>
                 </li>
-                <li>Exhibitions</li>
-                <li>Collections</li>
-                <li>Programs</li>
-                <li>Support</li>
+                <li>
+                  <a href="http://gallery.sf3am.com">Exhibitions</a></li>
+                <li>
+                  <a href="https://sf3am.com">Collections</a>
+                </li>
+                <li><a href="https://pacificio.com/training">Programs</a></li>
+                <li>
+                  <a href="https://djmblog.com/support">Support</a>
+                </li>
               </ul>
             </section>
             <section id="topTier--search-section">
@@ -33,7 +38,7 @@ export default class App extends Component {
               <article id="main-view--section-img___article">
                 <img
                   id="main-view--section-img___article-img"
-                  src="./static/img/flower-focus.jpg"
+                  src="./static/img/Seattle-from-Magnolia-by-Daniel-J-McKeown-IMG_0775-min.JPG"
                   alt="mainImg"
                 />
               </article>
@@ -293,6 +298,10 @@ export default class App extends Component {
             padding-block-end: calc(5px + 2vw);
             margin-inline-start: calc(5px + 1vw);
             margin-inline-end: calc(5px + 2vw);
+          }
+          ul#topTier--nav-section___nav a {
+            color: inherit;
+            text-decoration: none;
           }
         </style>
       </div>
