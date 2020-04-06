@@ -37,6 +37,9 @@ export default class App extends Component {
             --textFonts: "Calluna", "Caslon", "Garamond" serif;
             --sFonts: Courier, "Open Sans", monospace;
           }
+          div.animal {
+            background: white;
+          }
           aside,
           footer#web-component-boilerplate {
             border-style: groove;

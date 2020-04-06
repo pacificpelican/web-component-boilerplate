@@ -136,6 +136,7 @@ export default class App extends Component {
             margin-right: 0px;
             padding-left: 0px;
             padding-right: 0px;
+            background: white;
           }
           section#main-view--section-img,
           section#newsAndEvents,
