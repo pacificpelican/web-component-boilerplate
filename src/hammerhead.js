@@ -11,7 +11,7 @@ export default class App extends Component {
         <div class="grid">
           <section id="sidebar">µ</section>
           <img
-            src="../static/img/jonas-allert-v4xMAiisCx0-unsplash.jpg"
+            src="../static/img/Mango-cutout-Apirl2020.jpg"
             alt="hammerhead-shark"
             class="pic"
           />

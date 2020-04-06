@@ -1,6 +1,6 @@
 {
   "name": "web-component-boilerplate",
-  "version": "0.3.1",
+  "version": "0.4.0",
   "description": "a starter for self-contained bunde-site",
   "main": "index.html",
   "scripts": {

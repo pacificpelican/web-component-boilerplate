@@ -10,7 +10,7 @@ class Index extends Component {
   render() {
     return html`
       <${App} />
-      <${Hammerhead} animal="Hammerhead Shark" />
+      <${Hammerhead} animal="Mango the Quaker Parrot" />
     `;
   }
 }
