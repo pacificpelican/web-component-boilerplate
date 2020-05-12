@@ -70,7 +70,7 @@ export default class App extends Component {
               </article>
               <article id="box2">
                 <header id="newsAndEvents--box2__header"></header>
-                <h3>Panel Discussion on whether to retire term "trash raccoon"</h3>
+                <h3>Panel Discussion on the <a href="http://www.gutenberg.org/ebooks/56668">poems</a> of Arthur-Rimbaud</h3>
                 <aside>
                   Friday, May 10
                 </aside>
@@ -113,7 +113,7 @@ export default class App extends Component {
           <footer id="info">
             <aside id="copyright">
               <span id="designed"
-                >(c) 2019 Designed by <a href="http://altaredwood.work">Alta Redwood</a> in Washington State</span>
+                >(c) 2020 Designed by <a href="https://altaredwood.work">Alta Redwood</a> in Washington State</span>
             </aside>
           </footer>
         </div>

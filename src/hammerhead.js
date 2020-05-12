@@ -7,7 +7,7 @@ export default class App extends Component {
   render({ animal }) {
     return html`
       <div id="main" class="animal">
-        <h3>This footer is property of the ${animal}</h3>
+        <h3>This footer is property of ${animal}</h3>
         <div class="grid">
           <section id="sidebar">µ</section>
           <img
