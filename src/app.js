@@ -3,11 +3,12 @@ import htm from "/web_modules/htm.js";
 
 const html = htm.bind(h);
 
-export default class App extends Component {
+class App extends Component {
   render() {
     return html`
       <div id="main">
         <div id="fContainer">
+
           <header id="topTier">
             <section id="topTier--title-section">
               <h1 id="frye">Web Component Boilerplate</h1>
@@ -70,7 +71,7 @@ export default class App extends Component {
               </article>
               <article id="box2">
                 <header id="newsAndEvents--box2__header"></header>
-                <h3>Panel Discussion on the <a href="http://www.gutenberg.org/ebooks/56668">poems</a> of Arthur-Rimbaud</h3>
+                <h3>A tour of Lopez Island</h3>
                 <aside>
                   Friday, May 10
                 </aside>
@@ -78,7 +79,7 @@ export default class App extends Component {
                   11:00 am - 12:00 pm
                 </main>
                 <p>
-                  <a href="#">Little theater</a>
+                  <a href="http://gallery.sf3am.com/photo/Outer-Bay--Lopez-Island--Washington.jpg/59063719706064/">Meet at Outer Bay</a>
                 </p>
               </article>
               <article id="box3">
@@ -116,6 +117,7 @@ export default class App extends Component {
                 >(c) 2020 Designed by <a href="https://altaredwood.work">Alta Redwood</a> in Washington State</span>
             </aside>
           </footer>
+
         </div>
         <style>
           :root {
@@ -173,7 +175,7 @@ export default class App extends Component {
           header#newsAndEvents--box2__header {
             height: calc(10vh + 100px);
             background: blue;
-            background-image: url("./static/img/FIREbyDanMcKeown2017.jpg");
+            background-image: url("./static/img/Outer-Bay--Lopez-Island--Washington.jpg");
           }
           header#newsAndEvents--box3__header {
             height: calc(10vh + 100px);
@@ -310,9 +312,4 @@ export default class App extends Component {
   }
 }
 
-// render(
-//   html`
-//     <${App} />
-//   `,
-//   document.getElementById("main")
-// );
+export default App;

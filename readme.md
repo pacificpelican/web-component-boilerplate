@@ -22,6 +22,7 @@ This project provides the following features:
 1. `cd web-component-boilerplate`
 2. `npm install`
 3. `npm run build`
+===
 4. `npm run start`
 5. visit the server at [http://localhost:5000](http://localhost:5000)
 
