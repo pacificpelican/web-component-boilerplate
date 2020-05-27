@@ -12,6 +12,8 @@ Licensed under [ISC License](https://opensource.org/licenses/ISC) copyright (c) 
 - [Installation](#installation)
 - [Demo](#demo-app)
 
+![Baloo](./static/img/baloo.jpg)
+
 ## features
 This project provides the following features:
 - Starter for new component-powered web projects powered by [Preact](https://github.com/preactjs/preact) and [htm](https://github.com/developit/htm)

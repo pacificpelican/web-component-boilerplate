@@ -25,7 +25,7 @@ class App extends Component {
                 </li>
                 <li><a href="https://pacificio.com/training">Programs</a></li>
                 <li>
-                  <a href="https://djmblog.com/support">Support</a>
+                  <a href="https://pacificio.com/support">Support</a>
                 </li>
               </ul>
             </section>
@@ -114,7 +114,7 @@ class App extends Component {
           <footer id="info">
             <aside id="copyright">
               <span id="designed"
-                >(c) 2020 Designed by <a href="https://altaredwood.work">Alta Redwood</a> in Washington State</span>
+                >(c) 2020 Created by <a href="https://altaredwood.work">Alta Redwood</a> in Washington state</span>
             </aside>
           </footer>
 
@@ -190,13 +190,13 @@ class App extends Component {
             background: red;
           }
           section#store {
-            background-image: url("./img/photo-1550490754-1eb91754f4fc.jpg");
+            background-image: url("./static/img/pacificioLogo-b0097e479c07e80a159aa00aa6d580c0.jpg");
           }
           section#cafe {
-            background-image: url("../static/img/jonas-allert-v4xMAiisCx0-unsplash.jpg");
+            background-image: url("./static/img/FR-1.jpg");
           }
           section#donate {
-            background-image: url("./img/talia-cohen-30431-unsplash.jpg");
+            background-image: url("./static/img/Baloo.jpg");
           }
           @media (max-width: 779px) {
             section#donate,
