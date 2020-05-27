@@ -163,6 +163,9 @@ class App extends Component {
           section#newsAndEvents {
             margin-block-start: calc(2vh + 10px);
           }
+          section#newsAndEvents a {
+            color: inherit;
+          }
           section#newsAndEvents img {
             max-width: 99%;
           }

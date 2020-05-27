@@ -12,7 +12,7 @@ Licensed under [ISC License](https://opensource.org/licenses/ISC) copyright (c) 
 - [Installation](#installation)
 - [Demo](#demo-app)
 
-![Baloo](./static/img/baloo.jpg)
+![Baloo](./static/img/Baloo.jpg)
 
 ## features
 This project provides the following features:
