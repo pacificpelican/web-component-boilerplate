@@ -2,7 +2,7 @@
 
  ---
 
-Licensed under [ISC License](https://opensource.org/licenses/ISC) copyright (c) 2020 [Dan McKeown](http://danmckeown.info).
+Licensed under [ISC License](https://opensource.org/licenses/ISC) copyright (c) 2020 [Dan McKeown](https://danmckeown.info).
 
 ## Table Of Contents
 - [Features](#features)
@@ -18,15 +18,25 @@ Licensed under [ISC License](https://opensource.org/licenses/ISC) copyright (c) 
 This project provides the following features:
 - Starter for new component-powered web projects powered by [Preact](https://github.com/preactjs/preact) and [htm](https://github.com/developit/htm)
 - Bundles dependencies using [Snowpack](https://github.com/pikapkg/snowpack)
+- To deploy this site, upload the index.html and the static, src, and web_modules directories to your server and serve it as static html
 
 ## quickstart
+
+===
+download and build
+===
+
 0. git clone `git-url-here`
 1. `cd web-component-boilerplate`
 2. `npm install`
 3. `npm run build`
+
 ===
-4. `npm run start`
-5. visit the server at [http://localhost:5000](http://localhost:5000)
+serve the site
+===
+
+4. `npm run start` *(defaults to using the `serve` tool but you can serve the site with your preferred static site server)*
+5. `open [http://localhost:5000](http://localhost:5000)` *(to visit the server)*
 
 ## requirements
 - NodeJS
@@ -44,3 +54,4 @@ This project provides the following features:
 
 ## demo-app
 - For now, the best live example (built with an early version of web-component-boilerplate) is the [sf3am.com front page](https://sf3am.com)
+- Learn more about the project in [this screencast](https://www.youtube.com/watch?v=lcvIB6ryddE)

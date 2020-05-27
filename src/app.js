@@ -101,10 +101,10 @@ class App extends Component {
 
           <main id="grid">
             <section id="donate">
-              <span>donate</span>
+              <span><a href="https://pacificio.com/pay">donate</a></span>
             </section>
             <section id="store">
-              <span>store</span>
+              <span><a href="https://altaredwood.com">store</a></span>
             </section>
             <section id="cafe">
               <span>cafe</span>
@@ -121,13 +121,13 @@ class App extends Component {
         </div>
         <style>
           :root {
-            --uiFonts: "Ubuntu Mono", "Inconsolata", "Anonymous Pro", "Hack",
-              Menlo, monospace;
-            --contentFonts: "Ubuntu Sans", "Lato", "Open Sans", "Lucida Grande",
-              "Segoe UI", "Roboto", Helvetica, sans-serif;
-            --displayFonts: "Gentona", "Baufra", Helvetica, sans-serif;
-            --monoFonts: "Anonymous Pro", "Hack", "Fira Sans", "Inconsolata",
-              monospace;
+            --uiFonts: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            --contentFonts: "Lato", "Open Sans", "Lucida Grande", "Ubuntu Sans", "Segoe UI", "Roboto", Helvetica, sans-serif;
+            --displayFonts: "Gentona", "Baufra", Georgia, serif;
+            --monoFonts: "Hack", "Fira Sans", "Anonymous Pro", "Inconsolata", monospace;
+            --textFonts: "Calluna", "Caslon", "Garamond", serif;
+            --sFonts: Courier, "Open Sans", monospace;
+            --condensedFonts: "Densia Sans", "Fira Sans Condensed", "Roboto Condensed", "Open Sans Condensed", "Ubuntu Condensed", sans-serif;
             --white-color: white;
           }
           html {
@@ -193,13 +193,17 @@ class App extends Component {
             background: red;
           }
           section#store {
-            background-image: url("./static/img/pacificioLogo-b0097e479c07e80a159aa00aa6d580c0.jpg");
-          }
-          section#cafe {
             background-image: url("./static/img/FR-1.jpg");
           }
+          section#cafe {
+            background-image: url("./static/img/pacificioLogo-b0097e479c07e80a159aa00aa6d580c0.jpg");
+          }
           section#donate {
-            background-image: url("./static/img/Baloo.jpg");
+            background-image: url("../static/img/North-Cascades-National-Park4.jpg");
+          }
+          section#donate a, section#store a {
+            color: inherit;
+            text-decoration: none;
           }
           @media (max-width: 779px) {
             section#donate,
