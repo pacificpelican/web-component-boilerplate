@@ -1,4 +1,8 @@
- # web-component-boilerplate
+ # web-component-boilerplate-website
+
+ ---
+
+ *this is the web site for [web-component-boilerplate](https://github.com/pacificpelican/web-component-boilerplate) deployed at [https://web-component-boilerplate.pacificio.com](https://web-component-boilerplate.pacificio.com) via GitHub pages*
 
  ---
 

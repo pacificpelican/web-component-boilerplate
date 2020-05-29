@@ -16,20 +16,24 @@ export default class App extends Component {
               class="pic"
             />
           </section>
-          <img
-            src="../static/img/Mango-cutout-Apirl2020.jpg"
-            alt="hammerhead-shark"
-            class="pic"
-          />
-          <footer id="web-component-boilerplate">
-            <p><a href="https://github.com/pacificpelican/">web-component-boilerplate</a> from <a href="https://danmckeown.info">Dan McKeown</a></p>
-          </footer>
-          <aside id="rightSide">
+          <a href="http://pacificpelican.us">
             <img
-              src="../static/img/Untitled-tricolor.jpg"
-              alt="Untitled-tricolor"
+              src="../static/img/Mango-cutout-Apirl2020.jpg"
+              alt="hammerhead-shark"
               class="pic"
             />
+          </a>
+          <footer id="web-component-boilerplate">
+            <p>this is <a href="https://github.com/pacificpelican/web-component-boilerplate">web-component-boilerplate</a> from <a href="https://danmckeown.info">Dan McKeown</a></p>
+          </footer>
+          <aside id="rightSide">
+            <a href="https://danmckeown.info">
+              <img
+                src="../static/img/Untitled-tricolor.jpg"
+                alt="Untitled-tricolor"
+                class="pic"
+              />
+            </a>
           </aside>
         </div>
         <br />
