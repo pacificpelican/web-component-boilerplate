@@ -1,6 +1,6 @@
 {
   "name": "web-component-boilerplate-website",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "the site page for web-component-boilerplate.pacificio.com",
   "main": "index.html",
   "scripts": {
