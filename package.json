@@ -1,7 +1,7 @@
 {
-  "name": "web-component-boilerplate",
-  "version": "0.7.0",
-  "description": "a starter for self-contained bunde-site",
+  "name": "web-component-boilerplate-website",
+  "version": "1.0.0",
+  "description": "the site page for web-component-boilerplate.pacificio.com",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
