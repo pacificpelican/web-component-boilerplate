@@ -1,11 +1,12 @@
 {
   "name": "web-component-boilerplate",
-  "version": "0.7.0",
+  "version": "0.8.0",
   "description": "a starter for self-contained bunde-site",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npx snowpack",
+    "dev": "npx snowpack dev",
     "start": "npx serve ."
   },
   "author": "Dan McKeown <d@danmckeown.info>",
