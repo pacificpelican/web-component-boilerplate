@@ -12,7 +12,7 @@ Licensed under [ISC License](https://opensource.org/licenses/ISC) copyright (c) 
 - [Installation](#installation)
 - [Demo](#demo-app)
 
-![Baloo](./static/img/Baloo.jpg)
+![web-component-illustration](./static/img/wcb.png)
 
 ## features
 This project provides the following features:
@@ -22,18 +22,18 @@ This project provides the following features:
 
 ## quickstart
 
-===
+***
 download and build
-===
+---
 
 0. git clone `git-url-here`
 1. `cd web-component-boilerplate`
 2. `npm install`
 3. `npm run build`
 
-===
+***
 serve the site
-===
+---
 
 4. `npm run start` *(defaults to using the `serve` tool but you can serve the site with your preferred static site server)*
 5. `open [http://localhost:5000](http://localhost:5000)` *(to visit the server)*
@@ -53,5 +53,7 @@ serve the site
 - By convention, non-code assets like images can be stored in the /static directory and referenced directly
 
 ## demo-app
-- For now, the best live example (built with an early version of web-component-boilerplate) is the [sf3am.com front page](https://sf3am.com)
+- Sites using `web-component-boilerplate`
+  - [pacificipelican.us](http://pacificpelican.us)
+  - [No Such Thing as Normal Podcast web site](https://nosuchthingasnormalpodcast.com/)
 - Learn more about the project in [this screencast](https://www.youtube.com/watch?v=lcvIB6ryddE)
