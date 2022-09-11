@@ -16,27 +16,21 @@ class App extends Component {
             <section id="topTier--nav-section">
               <ul id="topTier--nav-section___nav">
                 <li>
-
-                  <a href="https://pacificio.com">🏠 pacificIO home</a>
+                  <a href="/template0.html">The Old Design</a>
                 </li>
                 <li>
-                  <a href="https://developer.mozilla.org/en-US/docs/Web/Web_Components">🗺️ MDN on Web Components</a>
-
+                  <a href="http://gallery.sf3am.com">Exhibitions</a></li>
+                <li>
+                  <a href="https://sf3am.com">Collections</a>
                 </li>
-                <li><a href="https://pacificio.com/training">🌐 About: The Web</a></li>
+                <li><a href="https://pacificio.com/training">Programs</a></li>
                 <li>
-                  <a href="https://djmcloud.com/gallery/">🐟 Exhibitions</a></li>
-                <li>
-
-                  <a href="https://github.com/pacificpelican/web-component-boilerplate">🦑 GitHub</a>
-
+                  <a href="https://pacificio.com/support">Support</a>
                 </li>
               </ul>
             </section>
             <section id="topTier--search-section">
-              <aside id="githubSVG">
-              <a href="https://github.com/pacificpelican"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg></a>
-              </aside>
+              🔍
             </section>
           </header>
 
@@ -45,7 +39,7 @@ class App extends Component {
               <article id="main-view--section-img___article">
                 <img
                   id="main-view--section-img___article-img"
-                  src="./static/img/AmazonParrot.jpg"
+                  src="./static/img/Seattle-from-Magnolia-by-Daniel-J-McKeown-IMG_0775-min.JPG"
                   alt="mainImg"
                 />
               </article>
@@ -60,9 +54,54 @@ class App extends Component {
             </section>
           </main>
 
+          <main id="carousel">
+            <section id="newsAndEvents">
+              <article id="box1">
+                <header id="newsAndEvents--box1__header"></header>
+                <h3>Alaska Wildlife</h3>
+                <aside>
+                  Friday, May 10
+                </aside>
+                <main>
+                  10:30 am - 12:00 pm
+                </main>
+                <p>
+                  <a href="http://gallery.sf3am.com/photo/heron-in-Ketchikan-Creek--Alaska.jpg/59063719706064/">The Egrets and Herons of the North</a>
+                </p>
+              </article>
+              <article id="box2">
+                <header id="newsAndEvents--box2__header"></header>
+                <h3>A tour of Lopez Island</h3>
+                <aside>
+                  Friday, May 10
+                </aside>
+                <main>
+                  11:00 am - 12:00 pm
+                </main>
+                <p>
+                  <a href="http://gallery.sf3am.com/photo/Outer-Bay--Lopez-Island--Washington.jpg/59063719706064/">Meet at Outer Bay</a>
+                </p>
+              </article>
+              <article id="box3">
+                <header id="newsAndEvents--box3__header"></header>
+                <h3>Raccoons and Trash Cans: Symbiosis or Imbalanced Ecosystem Marker</h3>
+                <span>  </span>
+                <aside>
+                  Friday, May 11
+                </aside>
+                <main>
+                  1:00 pm - 3:00 pm
+                </main>
+                <p>
+                  <a href="http://djmcloud.danieljmckeown.com/blog/2011/06/raccoon-raid/">Forest at Discovery Park</a>
+                </p>
+              </article>
+            </section>
+          </main>
+
           <main id="grid">
             <section id="donate">
-              <span><a href="./template0.html">previous layout</a></span>
+              <span><a href="https://pacificio.com/pay">donate</a></span>
             </section>
             <section id="store">
               <span><a href="https://altaredwood.com">store</a></span>
@@ -71,6 +110,13 @@ class App extends Component {
               <span>cafe</span>
             </section>
           </main>
+
+          <footer id="info">
+            <aside id="copyright">
+              <span id="designed">
+                web-component-boilerplate Template 0 (c) 2020 Created by <a href="https://altaredwood.work">Alta Redwood</a> in Washington state</span>
+            </aside>
+          </footer>
 
         </div>
         <style>
@@ -93,9 +139,6 @@ class App extends Component {
             padding-left: 0px;
             padding-right: 0px;
             background: white;
-          }
-          img#main-view--section-img___article-img {
-            border-radius: 32em;
           }
           h1.topHead a {
             text-decoration: none;
@@ -171,15 +214,6 @@ class App extends Component {
             section#store,
             section#cafe {
               width: calc(80vw + 5px);
-            }
-            #topTier--nav-section {
-              line-height: 2.1;
-            }
-            #topTier--nav-section a {
-              text-decoration: none;
-            }
-            #topTier--nav-section li {
-              list-style: none;
             }
             section#newsAndEvents article {
               width: calc(80vw + 5px);

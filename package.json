@@ -1,18 +1,18 @@
 {
-  "name": "web-component-boilerplate-website",
-  "version": "1.2.0",
-  "description": "the site page for web-component-boilerplate.pacificio.com",
+  "name": "web-component-boilerplate",
+  "version": "1.1.1",
+  "description": "a starter for self-contained bunde-site",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npx snowpack",
-    "dev": "npx snowpack dev",
+    "build": "npx snowpack@1.7.1",
+    "dev": "npx snowpack@1.7.1 dev",
     "start": "npx serve ."
   },
   "author": "Dan McKeown <d@danmckeown.info>",
   "license": "ISC",
   "dependencies": {
-    "preact": "~10.2.1",
-    "htm": "~2.2.1"
+    "htm": "~2.2.1",
+    "preact": "~10.2.1"
   }
 }
