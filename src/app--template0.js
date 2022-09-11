@@ -11,7 +11,7 @@ class App extends Component {
 
           <header id="topTier">
             <section id="topTier--title-section">
-              <h1 id="frye">Web Component Boilerplate</h1>
+              <h1 id="wcb-h1" class="topHead"><a href="./..">Web Component Boilerplate</a></h1>
             </section>
             <section id="topTier--nav-section">
               <ul id="topTier--nav-section___nav">
@@ -139,6 +139,10 @@ class App extends Component {
             padding-left: 0px;
             padding-right: 0px;
             background: white;
+          }
+          h1.topHead a {
+            text-decoration: none;
+            color: inherit;
           }
           section#main-view--section-img,
           section#newsAndEvents,

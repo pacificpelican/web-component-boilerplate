@@ -11,21 +11,21 @@ class App extends Component {
 
           <header id="topTier">
             <section id="topTier--title-section">
-              <h1 id="frye">Web Component Boilerplate</h1>
+              <h1 id="wcb-h1" class="topHead"><a href="./..">Web Component Boilerplate</a></h1>
             </section>
             <section id="topTier--nav-section">
               <ul id="topTier--nav-section___nav">
                 <li>
-                  <a href="https://pacificio.com">Visit</a>
+                  <a href="https://pacificio.com">🏠 pacificIO home</a>
                 </li>
                 <li>
-                  <a href="http://gallery.sf3am.com">Exhibitions</a></li>
-                <li>
-                  <a href="https://sf3am.com">Collections</a>
+                  <a href="https://developer.mozilla.org/en-US/docs/Web/Web_Components">🗺️ MDN on Web Components</a>
                 </li>
-                <li><a href="https://pacificio.com/training">Programs</a></li>
+                <li><a href="https://pacificio.com/training">🌐 About: The Web</a></li>
                 <li>
-                  <a href="https://pacificio.com/support">Support</a>
+                  <a href="https://djmcloud.com/gallery/">🐟 Exhibitions</a></li>
+                <li>
+                  <a href="https://github.com/pacificpelican/web-component-boilerplate">🦑 GitHub</a>
                 </li>
               </ul>
             </section>
@@ -39,7 +39,7 @@ class App extends Component {
               <article id="main-view--section-img___article">
                 <img
                   id="main-view--section-img___article-img"
-                  src="./static/img/Seattle-from-Magnolia-by-Daniel-J-McKeown-IMG_0775-min.JPG"
+                  src="./static/img/AmazonParrot.jpg"
                   alt="mainImg"
                 />
               </article>
@@ -54,54 +54,9 @@ class App extends Component {
             </section>
           </main>
 
-          <main id="carousel">
-            <section id="newsAndEvents">
-              <article id="box1">
-                <header id="newsAndEvents--box1__header"></header>
-                <h3>Alaska Wildlife</h3>
-                <aside>
-                  Friday, May 10
-                </aside>
-                <main>
-                  10:30 am - 12:00 pm
-                </main>
-                <p>
-                  <a href="http://gallery.sf3am.com/photo/heron-in-Ketchikan-Creek--Alaska.jpg/59063719706064/">The Egrets and Herons of the North</a>
-                </p>
-              </article>
-              <article id="box2">
-                <header id="newsAndEvents--box2__header"></header>
-                <h3>A tour of Lopez Island</h3>
-                <aside>
-                  Friday, May 10
-                </aside>
-                <main>
-                  11:00 am - 12:00 pm
-                </main>
-                <p>
-                  <a href="http://gallery.sf3am.com/photo/Outer-Bay--Lopez-Island--Washington.jpg/59063719706064/">Meet at Outer Bay</a>
-                </p>
-              </article>
-              <article id="box3">
-                <header id="newsAndEvents--box3__header"></header>
-                <h3>Raccoons and Trash Cans: Symbiosis or Imbalanced Ecosystem Marker</h3>
-                <span>  </span>
-                <aside>
-                  Friday, May 11
-                </aside>
-                <main>
-                  1:00 pm - 3:00 pm
-                </main>
-                <p>
-                  <a href="http://djmcloud.danieljmckeown.com/blog/2011/06/raccoon-raid/">Forest at Discovery Park</a>
-                </p>
-              </article>
-            </section>
-          </main>
-
           <main id="grid">
             <section id="donate">
-              <span><a href="https://pacificio.com/pay">donate</a></span>
+              <span><a href="./template0.html">previous layout</a></span>
             </section>
             <section id="store">
               <span><a href="https://altaredwood.com">store</a></span>
@@ -110,13 +65,6 @@ class App extends Component {
               <span>cafe</span>
             </section>
           </main>
-
-          <footer id="info">
-            <aside id="copyright">
-              <span id="designed"
-                >(c) 2020 Created by <a href="https://altaredwood.work">Alta Redwood</a> in Washington state</span>
-            </aside>
-          </footer>
 
         </div>
         <style>
@@ -139,6 +87,13 @@ class App extends Component {
             padding-left: 0px;
             padding-right: 0px;
             background: white;
+          }
+          img#main-view--section-img___article-img {
+            border-radius: 32em;
+          }
+          h1.topHead a {
+            text-decoration: none;
+            color: inherit;
           }
           section#main-view--section-img,
           section#newsAndEvents,
@@ -210,6 +165,15 @@ class App extends Component {
             section#store,
             section#cafe {
               width: calc(80vw + 5px);
+            }
+            #topTier--nav-section {
+              line-height: 2.1;
+            }
+            #topTier--nav-section a {
+              text-decoration: none;
+            }
+            #topTier--nav-section li {
+              list-style: none;
             }
             section#newsAndEvents article {
               width: calc(80vw + 5px);

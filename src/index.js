@@ -10,7 +10,7 @@ class Index extends Component {
   render() {
     return html`
       <${App} />
-      <${Footer} animal="Mango the Quaker Parrot" />
+      <${Footer} creatorCredit="Daniel J. McKeown" creatorURL="https://djmcloud.com" />
     `;
   }
 }

@@ -4,34 +4,11 @@ import htm from "/web_modules/htm.js";
 const html = htm.bind(h);
 
 export default class App extends Component {
-  render({ animal }) {
+  render({ creatorCredit, creatorURL }) {
     return html`
       <div id="main" class="animal">
-        <h3>This footer is property of ${animal}</h3>
-        <div class="grid">
-          <section id="sidebar">
-            <img
-              src="../static/img/Baloo.jpg"
-              alt="north-cascades-national-park"
-              class="pic"
-            />
-          </section>
-          <img
-            src="../static/img/Mango-cutout-Apirl2020.jpg"
-            alt="hammerhead-shark"
-            class="pic"
-          />
-          <footer id="web-component-boilerplate">
-            <p><a href="https://github.com/pacificpelican/">web-component-boilerplate</a> from <a href="https://danmckeown.info">Dan McKeown</a></p>
-          </footer>
-          <aside id="rightSide">
-            <img
-              src="../static/img/Untitled-tricolor.jpg"
-              alt="Untitled-tricolor"
-              class="pic"
-            />
-          </aside>
-        </div>
+        <h3>copyright 2022 <a href="${creatorURL}">${creatorCredit}</a></h3>
+       
         <br />
         <footer>
           
