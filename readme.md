@@ -17,8 +17,8 @@ Licensed under [ISC License](https://opensource.org/licenses/ISC) copyright (c) 
 ## features
 This project provides the following features:
 - Starter for new component-powered web projects powered by [Preact](https://github.com/preactjs/preact) and [htm](https://github.com/developit/htm)
-- Bundles dependencies using [Snowpack](https://github.com/pikapkg/snowpack)
-- To deploy this site, upload the index.html and the static, src, and web_modules directories to your server and serve it as static html
+- Builds both pages using [Vite](https://vite.dev/)
+- Deploys as a static site without a Node.js server
 
 ## quickstart
 
@@ -35,12 +35,14 @@ download and build
 serve the site
 ---
 
-4. `npm run start` *(defaults to using the `serve` tool but you can serve the site with your preferred static site server)*
-5. `open [http://localhost:5000](http://localhost:5000)` *(to visit the server)*
+4. `npm run start` *(previews the production build locally)*
+5. Open [http://localhost:5000](http://localhost:5000)
+
+For development, run `npm run dev` and open the URL it prints. Run `npm test` to check both page entry points.
 
 ## requirements
-- NodeJS
-- NPM
+- Node.js 20.19+ or 22.12+ (or a newer compatible release)
+- npm
 
 ## installation
 - Check [NodeJS](https://nodejs.org/en/) version: `node --version`
@@ -49,8 +51,9 @@ serve the site
 
 ## usage
 - Use the code as a scaffold for creating a new site (for example edit app.js or create a new component to import into index.js)
-- Make sure to upload the index.html, /src directory, /static directory, and the /web_modules directory to your live site when you deploy
-- By convention, non-code assets like images can be stored in the /static directory and referenced directly
+- Run `npm run build` and upload the contents of `dist` to the root of your static web host. The build includes `index.html`, `template0.html`, bundled scripts, the `static` directory, and the favicon. The existing links and Vite's default build assume deployment at the site root.
+- Assets in the `static` directory keep their existing `/static` URLs in development and production.
+- The previous Snowpack workflow and its `web_modules` directory are no longer used. Import npm dependencies by package name instead.
 
 ## demo-app
 - Sites using `web-component-boilerplate`

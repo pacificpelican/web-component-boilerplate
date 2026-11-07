@@ -1,5 +1,5 @@
-import { h, Component, render } from "/web_modules/preact.js";
-import htm from "/web_modules/htm.js";
+import { h, Component, render } from "preact";
+import htm from "htm";
 
 const html = htm.bind(h);
 
@@ -45,7 +45,7 @@ class App extends Component {
               </article>
               <article id="main-view--section-img___article-caption">
                 <h4 id="main-view--section-img___article-caption____h4">
-                  Powered by <a href="https://github.com/preactjs/preact">Preact</a>, <a href="https://github.com/developit/htm">htm</a>, and <a href="https://github.com/pikapkg/snowpack">Snowpack</a>
+                  Powered by <a href="https://github.com/preactjs/preact">Preact</a>, <a href="https://github.com/developit/htm">htm</a>, and <a href="https://vite.dev/">Vite</a>
                 </h4>
                 <h2 id="main-view--section-img___article-caption____h2">
                   Web Component Boilerplate is a fast web site starter with components and modules
