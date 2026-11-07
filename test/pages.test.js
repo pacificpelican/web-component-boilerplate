@@ -22,6 +22,7 @@ test("both entry points render their components and preserve page links", async 
     const altaRedwood = document.querySelector('#topTier--nav-section a[href="https://altaredwood.work"]');
     assert.equal(altaRedwood.textContent, "▶️ Alta Redwood");
     assert.equal(document.querySelector("#donate a").getAttribute("href"), "./template0.html");
+    assert.equal(document.querySelector("div.animal h3").textContent, "copyright 2022-2026 Daniel J. McKeown");
     assert.equal(document.querySelector("h3 a").textContent, "Daniel J. McKeown");
     assert.ok(document.querySelector("style").textContent.includes("@media"));
 

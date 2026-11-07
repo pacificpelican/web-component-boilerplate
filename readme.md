@@ -1,5 +1,7 @@
  # web-component-boilerplate
 
+<img src="./static/img/parrot-silhouette.png" alt="Black and white parrot silhouette" width="240">
+
  ---
 
 Licensed under [ISC License](https://opensource.org/licenses/ISC) copyright (c) 2020 [Dan McKeown](https://danmckeown.info).

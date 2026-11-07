@@ -7,7 +7,7 @@ export default class App extends Component {
   render({ creatorCredit, creatorURL }) {
     return html`
       <div id="main" class="animal">
-        <h3>copyright 2022 <a href="${creatorURL}">${creatorCredit}</a></h3>
+        <h3>copyright 2022-2026 <a href="${creatorURL}">${creatorCredit}</a></h3>
        
         <br />
         <footer>
