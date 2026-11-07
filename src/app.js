@@ -23,7 +23,7 @@ class App extends Component {
                 </li>
                 <li><a href="https://pacificio.com/training">🌐 About: The Web</a></li>
                 <li>
-                  <a href="https://djmcloud.com/gallery/">🐟 Exhibitions</a></li>
+                  <a href="https://altaredwood.work">▶️ Alta Redwood</a></li>
                 <li>
                   <a href="https://github.com/pacificpelican/web-component-boilerplate">🦑 GitHub</a>
                 </li>
@@ -39,8 +39,8 @@ class App extends Component {
               <article id="main-view--section-img___article">
                 <img
                   id="main-view--section-img___article-img"
-                  src="./static/img/AmazonParrot.jpg"
-                  alt="mainImg"
+                  src="./static/img/parrot-silhouette.png"
+                  alt="Black and white parrot silhouette"
                 />
               </article>
               <article id="main-view--section-img___article-caption">
@@ -89,7 +89,10 @@ class App extends Component {
             background: white;
           }
           img#main-view--section-img___article-img {
-            border-radius: 32em;
+            display: block;
+            max-width: 560px;
+            height: auto;
+            margin-inline: auto;
           }
           h1.topHead a {
             text-decoration: none;

@@ -17,7 +17,10 @@ test("both entry points render their components and preserve page links", async 
   try {
     await import("../src/index.js");
     assert.equal(document.querySelector("h1").textContent, "Web Component Boilerplate");
-    assert.equal(document.querySelector("#main-view img").getAttribute("src"), "./static/img/AmazonParrot.jpg");
+    assert.equal(document.querySelector("#main-view img").getAttribute("src"), "./static/img/parrot-silhouette.png");
+    assert.equal(document.querySelector("#main-view img").getAttribute("alt"), "Black and white parrot silhouette");
+    const altaRedwood = document.querySelector('#topTier--nav-section a[href="https://altaredwood.work"]');
+    assert.equal(altaRedwood.textContent, "▶️ Alta Redwood");
     assert.equal(document.querySelector("#donate a").getAttribute("href"), "./template0.html");
     assert.equal(document.querySelector("h3 a").textContent, "Daniel J. McKeown");
     assert.ok(document.querySelector("style").textContent.includes("@media"));
@@ -45,7 +48,7 @@ test("production build includes both pages and unchanged static assets", async (
       assert.match(content, /\/assets\/.+\.js/);
       assert.doesNotMatch(content, /\/src\/index/);
     }
-    for (const asset of ["favicon.ico", "static/img/AmazonParrot.jpg", "static/img/Baloo.jpg"]) {
+    for (const asset of ["favicon.ico", "static/img/parrot-silhouette.png", "static/img/Baloo.jpg"]) {
       assert.deepEqual(await readFile(join(outDir, asset)), await readFile(asset));
     }
   } finally {
